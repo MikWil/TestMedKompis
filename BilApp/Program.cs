@@ -30,8 +30,8 @@ class Program
     {
         Bil MinBil = new Bil { color = "red", HorsePower = 240, wheel = 4, Currentspeed = 0};
 
-        
-
+        MinBil.Accelerate(0);
+        Console.WriteLine(MinBil.Currentspeed);
 
     }
 }
