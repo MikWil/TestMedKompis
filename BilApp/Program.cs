@@ -5,6 +5,7 @@ class Bil
 {
     public int wheel { get; set; }
     public string[] Maker = new string[3] { "Volvo", "Ford", "BMW" };
+    public int MakeYear { get; set; }
     public string color { get; set; }
     public int Currentspeed { get; set; }
     public Engine Engine;
@@ -21,11 +22,13 @@ class Bil
         this.Currentspeed+= Currentspeed;
         Console.WriteLine("You are slowing down to: " + Currentspeed);
     }
+
     public string TellMeAboutYourCar()
     {
         return "I own a car that has a " + color + " color" + "\nAnd it has " + Engine.HorsePower + "HP.";
 
     }
+
 }
 class Engine
 {
@@ -55,11 +58,14 @@ class Program
         
         
         Bil Ferrari = new Bil { color = "red",Engine = V6, wheel = 4, Currentspeed = 0};
-        Bil Prototype = new Bil { color = "black", Engine = V8, wheel = 4, Currentspeed = 0 };
-        Bil Prototype2 = new Bil { color = "gul", Engine = V6, wheel = 4, Currentspeed = 0 };
+        Bil Prototype = new Bil { color = "black", Engine = V8, wheel = 4, Currentspeed = 0, MakeYear = 2012};
+        Bil Prototype2 = new Bil { color = "gul", Engine = V6, wheel = 4, Currentspeed = 0, MakeYear = 2013};
         
         Person Mikael = new Person { Name = "Mikael", Age = 19, Gender = "Man", Bil = Ferrari };
         Person Murat = new Person { Name = "FknMert", Age = 19, Gender = "Man", Bil = Prototype };
+
+
+        Mikael.Bil.Accelerate(25);
         Console.WriteLine(Murat.Bil.TellMeAboutYourCar());
         Console.WriteLine(Mikael.Bil.TellMeAboutYourCar());
         //Console.WriteLine("Your speed is: " + MinBil.Currentspeed);
