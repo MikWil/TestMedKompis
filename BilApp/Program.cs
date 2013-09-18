@@ -1,31 +1,25 @@
 ﻿using System;
 
 
-    class Bil
+class Bil
+{
+    public int wheel { get; set; }
+    public string[] Maker = new string[3] { "Volvo", "Ford", "BMW" };
+    public string color { get; set; }
+    public int speed { get; set; }
+
+
+}
+
+class Program
+{
+    static void Main()
     {
-        public int wheel = 4;
-        public string Maker { get; set; }
-        public string color { get; set; }
-        public int speed { get; set; }
+        Bil MinBil = new Bil { color = "red", speed = 240, wheel = 4 };
+
+        
 
 
     }
-
-    class Program
-    {
-        static void Main(string[] args)
-        {
-
-
-            Bil MinBil = new Bil();
-            Console.WriteLine(MinBil.Maker);
-            
-
-
-
-            
-           
-
-        }
-    }
+}
 
