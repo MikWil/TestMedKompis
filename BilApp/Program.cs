@@ -13,12 +13,19 @@
 
     class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
-            Bil MinBil = new Bil { Maker = "Volvo", color = "red", speed = 240 };
+
+
+            Bil MinBil = new Bil();
+            Console.WriteLine(MinBil.Maker);
             
+
+
+
             
            
+
         }
     }
 
