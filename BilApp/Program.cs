@@ -13,9 +13,10 @@
 
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-
+            Bil MinBil = new Bil { Maker = "Volvo", color = "red", speed = 240 };
+            
             
            
         }
