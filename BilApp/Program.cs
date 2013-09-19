@@ -12,13 +12,7 @@ namespace BilApp
         {
 
             Console.WriteLine("YOLO");
-            Console.WriteLine("YOLO");
-            Console.WriteLine("YOLO");
-
-
-            Console.WriteLine("YOLO");
-            Console.WriteLine("YOLO"); Console.WriteLine("YOLO");
-
+           
         }
     }
 }
