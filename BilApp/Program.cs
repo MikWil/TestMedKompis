@@ -1,18 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace BilApp
-{
+
+    class Bil
+    {
+        public int wheel = 4;
+        public string Maker { get; set; }
+        public string color { get; set; }
+        public int speed { get; set; }
+
+
+    }
+
     class Program
     {
         static void Main(string[] args)
         {
 
-            Console.WriteLine("YOLO");
+            
            
         }
     }
-}
+
